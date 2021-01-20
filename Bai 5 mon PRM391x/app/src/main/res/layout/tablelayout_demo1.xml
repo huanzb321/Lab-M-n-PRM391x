@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+    <TableRow android:padding="5dip">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Student Enrolment Form"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:textSize="20dip"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Student Id: "
+            android:layout_column="0"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/st_id"
+            android:layout_height="wrap_content"
+            android:layout_colunn="1"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_column="0"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Fee Paid:"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/fee_paid"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/add_button"
+            android:layout_height="wrap_content"
+            android:text="Add Student"/>
+        <Button
+            android:id="@+id/cancel_button"
+            android:text="Cancel"
+            android:layout_height="wrap_content" />
+    </TableRow>
+</TableLayout>
