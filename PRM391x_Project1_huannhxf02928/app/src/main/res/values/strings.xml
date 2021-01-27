@@ -1,0 +1,34 @@
+<resources>
+    <string name="main_quiz">The software tests your knowledge through 10 questions in 1 minute. </string>
+    <string name="name">Your Name:</string>
+    <string name="ready">Are you ready?</string>
+    <string name="start_quiz">I am ready!</string>
+    <string name="app_name">Quiz App</string>
+    <string name="quiz_1">1. What is Deoxyribonucleic acid commonly referred to as?</string>
+    <string name="quiz_1_selection1">RNA</string>
+    <string name="quiz_1_selection2">CIA</string>
+    <string name="quiz_1_selection3">DNA</string>
+    <string name="quiz_2">2. What process involves treating rubber with sulfur to harden it?</string>
+    <string name="quiz_3">3. Name two different organelles of a eukaryotic cell.</string>
+    <string name="quiz_3_selection1">Ribosome</string>
+    <string name="quiz_3_selection2">Ribosome</string>
+    <string name="quiz_3_selection3">Golgi apparatus</string>
+    <string name="quiz_3_selection4">Diploid</string>
+    <string name="quiz_4">4. This word describes the force that pulls objects to the middle of the earth?</string>
+    <string name="quiz_5">5 What type of trees yield the resin used to produce turpentine?</string>
+    <string name="quiz_5_selection1">Palm trees</string>
+    <string name="quiz_5_selection2">Pine trees</string>
+    <string name="quiz_5_selection3">Oak trees</string>
+    <string name="quiz_6">6. Cumulus and Cirrus are types of what?</string>
+    <string name="quiz_7">7. Which two planets have one or more moons?</string>
+    <string name="quiz_7_selection1">Ceres</string>
+    <string name="quiz_7_selection2">Mercury</string>
+    <string name="quiz_7_selection3">Earth</string>
+    <string name="quiz_7_selection4">Pluto</string>
+    <string name="quiz_8">8. Where in the human body would you find the scaphoid bone?</string>
+    <string name="quiz_9">9. Which grow upwards Stalactites or Stalagmites?</string>
+    <string name="quiz_9_selection1">Stalactites</string>
+    <string name="quiz_9_selection2">Stalagmites</string>
+    <string name="quiz_10">10. What process involves heating an ore to obtain a metal?</string>
+    <string name="submit">SUBMIT ANSWERS</string>
+</resources>
