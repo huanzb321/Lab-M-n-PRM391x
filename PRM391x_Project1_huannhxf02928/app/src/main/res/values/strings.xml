@@ -31,4 +31,5 @@
     <string name="quiz_9_selection2">Stalagmites</string>
     <string name="quiz_10">10. What process involves heating an ore to obtain a metal?</string>
     <string name="submit">SUBMIT ANSWERS</string>
+    <string name="finish">Finish!</string>
 </resources>
