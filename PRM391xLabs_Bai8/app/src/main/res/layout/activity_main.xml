@@ -15,6 +15,6 @@
         android:layout_gravity="center"
         android:text="This is a custom text view!"
         android:textSize="30dp"
-        app:font="arial.ttf"/>
+        app:fontName="arial.ttf"/>
 
 </LinearLayout>
