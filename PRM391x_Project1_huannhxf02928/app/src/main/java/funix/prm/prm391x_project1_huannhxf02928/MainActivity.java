@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public String username = ""; // Bien gan gia tri
+    public String username = ""; // Bien gan ten cua nguoi dung nhap
     private RadioButton rg1_rb3; // Nut RadioButton
     private RadioButton rg5_rg2;
     private RadioButton rg9_rg2;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Hien thi man hinh chính
+        setContentView(R.layout.activity_main); // Hien thi man hinh chinh
 
         EditText name = (EditText)findViewById(R.id.name);
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 username = name.getText().toString();
-                setContentView(R.layout.start_quiz); // Hien thi man hinh quiz
+                setContentView(R.layout.start_acivity); // Hien thi man hinh quiz
 
                 TextView yourName = (TextView)findViewById(R.id.yourName);
                 yourName.setText(username);
@@ -54,19 +54,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void quizSubmit() { // Phuong thuc dua ra ket qua
+    private void quizSubmit() { // Phuong thuc hien thi quiz
 
         final TextView counttime=findViewById(R.id.counttime);
         new CountDownTimer(60000,1000) {
             @Override
-            public void onTick(long millisUntilFinished) {
+            public void onTick(long millisUntilFinished) {  // chuong trinh trong trong thoi gian dem nguoc
                 counttime.setText("Time: " + counter);
                 counter--;
             }
             @Override
-            public void onFinish() {
+            public void onFinish() { // chuong trinh chay khi thoi gian het
                 checkTheResult();
-                setContentView(R.layout.end_quiz);
+                setContentView(R.layout.end_activity);
             }
         }.start();
 
@@ -75,11 +75,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkTheResult();
-                setContentView(R.layout.end_quiz);
+                setContentView(R.layout.end_activity);
             }
         });
     }
-    private void checkTheResult() {
+    private void checkTheResult() { // phuong thuc kiem tra ket qua cua nguoi dung
         int count = 0; // Dem so cau hoi nguoi dung lam dung
         rg1_rb3=(RadioButton)findViewById(R.id.rg1_rb3); //Nhan dien layout
         Boolean quiz_1 = rg1_rb3.isChecked(); //Check dap an nguoi dung chon

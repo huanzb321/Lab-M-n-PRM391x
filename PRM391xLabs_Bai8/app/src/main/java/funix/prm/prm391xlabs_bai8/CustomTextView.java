@@ -10,12 +10,6 @@ import android.os.Build;
 
 public class CustomTextView extends androidx.appcompat.widget.AppCompatTextView {
 
-    @TargetApi(Build. VESION_CODES.LOLLIPOP)
-    public CustomTextView (Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes) ;
-        init(attrs);
-    }
-
     public CustomTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs);
