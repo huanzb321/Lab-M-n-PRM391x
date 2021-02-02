@@ -7,7 +7,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class DateView extends androidx.appcompat.widget.AppCompatTextView {
+public class DateView extends TextView {
     public DateView(Context context) {
         super(context);
         setDate();
