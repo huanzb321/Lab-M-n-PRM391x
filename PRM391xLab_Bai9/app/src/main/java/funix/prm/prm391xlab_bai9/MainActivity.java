@@ -14,6 +14,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private EditText mInputA, mInputB;
 
     private TextView mResult;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mInputB = (EditText) findViewById(R.id.inputB);
         mResult = (TextView) findViewById(R.id.result);
 
+        // Listener in variable
         mMultiplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +39,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         });
 
+        // Inline anonyous listener
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,14 +55,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mSubtraction.setOnClickListener(this);
     }
 
-    public void addtition(View v) {
+    // OnClick in XML
+    public void addition(View v) {
         double result = Double.parseDouble(mInputA.getText().toString())
                 + Double.parseDouble(mInputB.getText().toString());
         mResult.setText("Kết quả: " + mInputA.getText().toString() + "+"
                 + mInputB.getText().toString() + "=" + result);
     }
+
+    // Activity is listener
     public void onClick(View v) {
-        if (v == mSubtraction) {
+        if (v == mDivision) {
             double result = Double.parseDouble(mInputA.getText().toString())
                     - Double.parseDouble(mInputB.getText().toString());
             mResult.setText("Kết quả: " + mInputA.getText().toString() + "-"
