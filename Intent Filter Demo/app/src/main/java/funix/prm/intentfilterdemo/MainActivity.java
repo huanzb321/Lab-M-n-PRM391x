@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void dailLauch(View v) {
-        Intent lauch = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:123456789"));
-        startActivity(lauch);
+        Intent launch = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:123456789"));
+        startActivity(launch);
     }
 }
