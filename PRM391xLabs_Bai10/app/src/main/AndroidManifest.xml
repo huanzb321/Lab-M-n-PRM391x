@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ImplicitIntentActivity" />
+        <activity android:name=".IntentFilterActivity">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ExplicitIntentActivity" />
+        <activity android:name=".ResultActivity"/>
     </application>
 
 </manifest>

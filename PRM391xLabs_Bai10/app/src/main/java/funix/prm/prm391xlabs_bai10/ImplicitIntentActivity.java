@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-public class ImplicitIntenActivity extends Activity implements View.OnClickListener {
+public class ImplicitIntentActivity extends Activity implements View.OnClickListener {
     private Spinner mSpinner;
 
     @Override
@@ -46,8 +46,9 @@ public class ImplicitIntenActivity extends Activity implements View.OnClickListe
                 break;
         }
         if (intent != null) {
-            statrActivity(intent);
+            startActivity(intent);
         }
     }
 }
+
 
