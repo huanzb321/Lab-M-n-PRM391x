@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">PRM391x_Project2_huannhfx02928</string>
+    <string name="app_name">Tour Guide App</string>
+
+    <string name="vn">Hà Nội, Việt Nam</string>
+    <string name="atm">ATM</string>
     <string name="atm_hoanKiem">ATM Hoàn Kiếm</string>
     <string name="dc_atmHK">17 phố Lý Thường Kiệt, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</string>
     <string name="atm_dinhTienHoang">ATM Đinh Tiên Hoàng</string>
@@ -19,6 +22,7 @@
     <string name="atm_khamThien">ATM Khâm Thiên</string>
     <string name="dc_atmKT">158 Khâm Thiên, Quận Đống Đa, Hà Nội</string>
 
+    <string name="bv">Bệnh Viên</string>
     <string name="bv_bachMai">Bệnh viện Bạch Mai</string>
     <string name="dc_bvBM">78 – Đường Giải Phóng – Phương Mai – Đống Đa – Hà Nội</string>
     <string name="bv_huuNghi">Bệnh Viện Hữu Nghị</string>
@@ -40,6 +44,7 @@
     <string name="bv_nhiTrungUng">Bệnh Viện Nhi Trung Ương</string>
     <string name="dc_bvNTU">18/879 – Đường La Thành – Quận Đống Đa – Hà Nội</string>
 
+    <string name="ks">Khách Sạn</string>
     <string name="ks_tqh">The Queen Hotel &amp; Spa</string>
     <string name="dc_ksTQH">67 Thuốc Bắc, Hàng Bồ, Hàng Bồ, Quận Hoàn Kiếm, Hà Nội, Việt Nam</string>
     <string name="ks_hnh">Hanoi Nostalgia Hotel &amp; Spa</string>
@@ -57,6 +62,7 @@
     <string name="ks_bl">Bluebell Hotel</string>
     <string name="dc_ksBL">41 Ngõ Huyện, Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội, Việt Nam</string>
 
+    <string name="xb">Xe Bus</string>
     <string name="tuyen_01">Tuyến 01</string>
     <string name="loTrinh_t01">BX Gia Lâm - BX Yên Nghĩa</string>
     <string name="tuyen_02">Tuyến 02</string>
@@ -75,6 +81,4 @@
     <string name="loTrinh_t07">Cầu Giấy - Nội Bài</string>
     <string name="tuyen_08">Tuyến 08</string>
     <string name="loTrinh_t08">Long Biên - Đông Mỹ</string>
-
-
 </resources>
