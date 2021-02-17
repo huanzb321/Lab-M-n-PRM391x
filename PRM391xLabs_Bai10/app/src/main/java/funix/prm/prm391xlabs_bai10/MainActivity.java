@@ -20,13 +20,13 @@ public class MainActivity extends Activity {
         });
 
         Button btnExplicitIntent = (Button) findViewById(R.id.explicit_intent);
-        btnImplicitIntent.setOnClickListener((view) -> {
+        btnExplicitIntent.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, ExplicitIntentActivity.class);
             startActivity(intent);
         });
 
-        Button btnIntentFilter = (Button) findViewById(R.id.implicit_intent);
-        btnImplicitIntent.setOnClickListener((view) -> {
+        Button btnIntentFilter = (Button) findViewById(R.id.intent_filter);
+        btnIntentFilter.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, IntentFilterActivity.class);
             startActivity(intent);
         });

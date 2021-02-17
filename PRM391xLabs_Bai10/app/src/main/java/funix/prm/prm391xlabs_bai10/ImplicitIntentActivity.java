@@ -19,7 +19,7 @@ public class ImplicitIntentActivity extends Activity implements View.OnClickList
 
         mSpinner = (Spinner) findViewById(R.id.spinner1);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
-                R.array.intents, android.R.layout.simple_spinner_dropdown_item);
+                R.array.intents, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSpinner.setAdapter(adapter);
         Button but = (Button) findViewById(R.id.button1);
@@ -37,7 +37,7 @@ public class ImplicitIntentActivity extends Activity implements View.OnClickList
 
             case 1:
                 // to search for Funix on google map
-                intent = new Intent(Intent.ACTION_VIEW), Uri.parse("geo:0,0?q=funix"));
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=funix"));
                 break;
 
             case 2:
