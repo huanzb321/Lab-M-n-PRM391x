@@ -35,7 +35,7 @@
     <string name="dc_bvTMHTU">78 – Đường Giải Phóng – Quận Đống Đa – Hà Nội</string>
     <string name="bv_matTU">Bệnh Viện Mắt Trung Ương</string>
     <string name="dc_bvMTU">85 – Phố Bà Triệu – Quận Hai Bà Trưng – Hà Nội</string>
-    <string name="vien_yHocCoTruyenTU">Viện Y Học Cổ Truyền Trung Ương</string>
+    <string name="v_yHocCoTruyenTU">Viện Y Học Cổ Truyền Trung Ương</string>
     <string name="dc_vYHCTTU">29 – Phố Nguyễn Bỉnh Khiêm – Quận Hai Bà Trưng – Hà Nội</string>
     <string name="bv_noiTiet">Bệnh Viện Nội Tiết</string>
     <string name="dc_bvNT">80 – Thái Thịnh II – Thịnh Quang – Đống Đa – Hà Nội</string>
@@ -48,7 +48,7 @@
     <string name="ks_tqh">The Queen Hotel &amp; Spa</string>
     <string name="dc_ksTQH">67 Thuốc Bắc, Hàng Bồ, Hàng Bồ, Quận Hoàn Kiếm, Hà Nội, Việt Nam</string>
     <string name="ks_hnh">Hanoi Nostalgia Hotel &amp; Spa</string>
-    <string name="dc_ksHnh">13-15 Luong Ngoc Quyen, Hang Buom, Hoan Kiem, Hàng Buồm, Quận Hoàn Kiếm, Hà Nội, Việt Nam</string>
+    <string name="dc_ksHNH">13-15 Luong Ngoc Quyen, Hàng Buồm, Quận Hoàn Kiếm, Hà Nội, Việt Nam</string>
     <string name="ks_clh">Church Legend Hotel Hanoi</string>
     <string name="dc_ksCLH">46 Ấu Triệu, Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội, Việt Nam</string>
     <string name="ks_lhdh">Little Hanoi Diamond Hotel</string>

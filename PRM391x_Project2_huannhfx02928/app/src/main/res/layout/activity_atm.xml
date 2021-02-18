@@ -14,14 +14,14 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -31,26 +31,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_tqh"
+                    android:text="@string/atm_hoanKiem"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksTQH"
+                    android:text="@string/dc_atmHK"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -60,26 +60,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_hnh"
+                    android:text="@string/atm_dinhTienHoang"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksHNH"
+                    android:text="@string/dc_atmDTH"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -89,26 +89,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_clh"
+                    android:text="@string/atm_hoiSo"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksCLH"
+                    android:text="@string/dc_atmHS"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -118,26 +118,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_lhdh"
+                    android:text="@string/atm_namHaNoi"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksLHDH"
+                    android:text="@string/dc_atmNHN"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -147,26 +147,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_fdlr"
+                    android:text="@string/atm_haiBaTrung"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksFDLR"
+                    android:text="@string/dc_atmHBT"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -176,26 +176,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_alh"
+                    android:text="@string/atm_leNgocHan"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksALH"
+                    android:text="@string/dc_atmLNH"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -205,26 +205,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_hzh"
+                    android:text="@string/atm_phamHung"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksHZH"
+                    android:text="@string/dc_atmPH"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_100"
             android:layout_marginTop="1sp">
 
             <ImageView
                 android:layout_width="@dimen/sp_220"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/atm_machine" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -234,12 +234,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_bl"
+                    android:text="@string/atm_khamThien"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksBL"
+                    android:text="@string/dc_atmKT"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>

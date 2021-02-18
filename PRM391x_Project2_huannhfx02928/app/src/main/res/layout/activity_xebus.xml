@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     android:fillViewport="false">
     <TableLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:collapseColumns=""
@@ -14,14 +13,14 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -31,26 +30,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_tqh"
+                    android:text="@string/tuyen_01"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksTQH"
+                    android:text="@string/loTrinh_t01"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -60,26 +59,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_hnh"
+                    android:text="@string/tuyen_02"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksHNH"
+                    android:text="@string/loTrinh_t02"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -89,26 +88,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_clh"
+                    android:text="@string/tuyen_03A"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksCLH"
+                    android:text="@string/loTrinh_t03A"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -118,26 +117,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_lhdh"
+                    android:text="@string/tuyen_03B"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksLHDH"
+                    android:text="@string/loTrinh_t03B"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -147,26 +146,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_fdlr"
+                    android:text="@string/tuyen_04"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksFDLR"
+                    android:text="@string/loTrinh_t04"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -176,26 +175,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_alh"
+                    android:text="@string/tuyen_05"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksALH"
+                    android:text="@string/loTrinh_t05"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -205,26 +204,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_hzh"
+                    android:text="@string/tuyen_06"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksHZH"
+                    android:text="@string/loTrinh_t06"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_400"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/metro" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -234,12 +233,41 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_bl"
+                    android:text="@string/tuyen_07"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksBL"
+                    android:text="@string/loTrinh_t07"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_400"
+            android:layout_marginTop="1sp">
+
+            <ImageView
+                android:layout_width="@dimen/sp_130"
+                android:layout_height="@dimen/sp_100"
+                android:background="@color/white"
+                android:src="@drawable/metro" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/sp_20"
+                android:layout_marginLeft="@dimen/sp_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuyen_08"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loTrinh_t08"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>

@@ -14,14 +14,14 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -31,26 +31,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_tqh"
+                    android:text="@string/bv_bachMai"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksTQH"
+                    android:text="@string/dc_bvBM"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -60,26 +60,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_hnh"
+                    android:text="@string/bv_huuNghi"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksHNH"
+                    android:text="@string/dc_bvHN"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -89,26 +89,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_clh"
+                    android:text="@string/bv_e"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksCLH"
+                    android:text="@string/dc_bvE"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -118,26 +118,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_lhdh"
+                    android:text="@string/v_rangHamMat"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksLHDH"
+                    android:text="@string/dc_vRHM"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -147,26 +147,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_fdlr"
+                    android:text="@string/bv_taiMuiHongTU"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksFDLR"
+                    android:text="@string/dc_bvTMHTU"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -176,26 +176,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_alh"
+                    android:text="@string/bv_matTU"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksALH"
+                    android:text="@string/dc_bvMTU"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -205,26 +205,26 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_hzh"
+                    android:text="@string/v_yHocCoTruyenTU"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksHZH"
+                    android:text="@string/dc_vYHCTTU"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="@color/teal_300"
             android:layout_marginTop="1sp">
 
             <ImageView
-                android:layout_width="@dimen/sp_220"
+                android:layout_width="@dimen/sp_130"
                 android:layout_height="@dimen/sp_100"
                 android:background="@color/white"
-                android:src="@drawable/hotel" />
+                android:src="@drawable/hospital" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -234,12 +234,70 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ks_bl"
+                    android:text="@string/bv_noiTiet"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dc_ksBL"
+                    android:text="@string/dc_bvNT"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_300"
+            android:layout_marginTop="1sp">
+
+            <ImageView
+                android:layout_width="@dimen/sp_130"
+                android:layout_height="@dimen/sp_100"
+                android:background="@color/white"
+                android:src="@drawable/hospital" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/sp_20"
+                android:layout_marginLeft="@dimen/sp_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bv_vietDuc"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dc_bvVD"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_300"
+            android:layout_marginTop="1sp">
+
+            <ImageView
+                android:layout_width="@dimen/sp_130"
+                android:layout_height="@dimen/sp_100"
+                android:background="@color/white"
+                android:src="@drawable/hospital" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/sp_20"
+                android:layout_marginLeft="@dimen/sp_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bv_nhiTrungUng"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dc_bvNTU"
                     android:textColor="@color/white"/>
             </LinearLayout>
         </TableRow>
