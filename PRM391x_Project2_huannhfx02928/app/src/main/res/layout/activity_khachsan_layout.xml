@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:collapseColumns=""
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:layout_marginTop="1sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/hotel" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/sp_20"
+                android:layout_marginLeft="@dimen/sp_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ks_tqh"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dc_ksTQH"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </TableRow>
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_hnh"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksHNH"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_clh"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksCLH"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_lhdh"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksLHDH"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_fdlr"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksFDLR"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_alh"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksALH"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_hzh"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksHZH"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/hotel" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/ks_bl"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dc_ksBL"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:collapseColumns=""
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_400"
+            android:layout_marginTop="1sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/metro" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/sp_20"
+                android:layout_marginLeft="@dimen/sp_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuyen_01"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loTrinh_t01"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </TableRow>
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_02"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t02"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_03A"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t03A"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_03B"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t03B"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_04"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t04"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_05"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t05"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_06"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t06"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_07"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t07"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_400"-->
+<!--            android:layout_marginTop="1sp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/sp_220"-->
+<!--                android:layout_height="@dimen/sp_100"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/metro" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="@dimen/sp_20"-->
+<!--                android:layout_marginLeft="@dimen/sp_10">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/tuyen_08"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/loTrinh_t08"-->
+<!--                    android:textColor="@color/white"/>-->
+<!--            </LinearLayout>-->
+<!--        </TableRow>-->
+    </TableLayout>
+</ScrollView>
