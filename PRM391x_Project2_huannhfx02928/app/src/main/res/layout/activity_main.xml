@@ -9,24 +9,4 @@
         android:layout_height="match_parent"
         android:id="@+id/fragment_switch"
         android:name="funix.prm.prm391x_project2_huannhfx02928.FragmentMenu"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment_switch1"
-        android:name="funix.prm.prm391x_project2_huannhfx02928.FragmentMenu"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment_switch2"
-        android:name="funix.prm.prm391x_project2_huannhfx02928.FragmentMenu"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment_switch3"
-        android:name="funix.prm.prm391x_project2_huannhfx02928.FragmentMenu"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment_switch4"
-        android:name="funix.prm.prm391x_project2_huannhfx02928.FragmentMenu"/>
 </LinearLayout>

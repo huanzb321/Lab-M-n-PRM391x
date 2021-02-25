@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -35,12 +34,6 @@ public class MainActivity extends AppCompatActivity {
 //        mListView.setAdapter(customAdapter);
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_main);
-
-        FragmentMenu fragment = new FragmentMenu();
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_switch, fragment);
-        fragmentTransaction.commit();
     }
 
     public void fragmentHotelClick (View view) {
