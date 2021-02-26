@@ -8,22 +8,24 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class CustomAdapter extends BaseAdapter {
     private Context mContent;
-    private String name[];
-    private int mFlag [];
+    private int layout;
+    List<Item> itemList;
     private LayoutInflater mInflater;
 
-    public CustomAdapter (Context applicationContext, String[] name, int [] flags) {
+    public CustomAdapter (Context applicationContext, int layout, List<Item> listItem) {
         this.mContent = applicationContext;
-        this.name = name;
-        this.mFlag = flags;
-        mInflater = (LayoutInflater.from(mContent));
+        this.layout = layout;
+        this.itemList = listItem;
+
     }
 
     @Override
     public int getCount() {
-        return name.length;
+        return itemList.size();
     }
     @Override
     public Object getItem(int i) {
@@ -36,12 +38,14 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        view = mInflater.inflate(R.layout.row_item, null);
-        TextView country = view.findViewById(R.id.textView);
-        ImageView icon = view.findViewById(R.id.icon);
-        country.setText(name[i]);
-        icon.setImageResource(mFlag[i]);
+    public View getView(int position, View view, ViewGroup viewGroup) {
+        mInflater = (LayoutInflater.from(mContent));
+        view = mInflater.inflate(layout, null);
+        TextView txt1 = view.findViewById(R.id.textView);
+
+        Item item = itemList.get(position);
+        txt1.setText(item.getName());
+
         return view;
     }
 }
