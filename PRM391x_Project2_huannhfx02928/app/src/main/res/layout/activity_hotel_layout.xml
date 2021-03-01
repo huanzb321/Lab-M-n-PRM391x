@@ -20,12 +20,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/ks"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:gravity="center"/>
     </LinearLayout>
+
     <ListView
-        android:id="@+id/list"
+        android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@color/teal_200"
         android:divider="@color/material_blue_grey_800"
         android:dividerHeight="1dp"
         android:footerDividersEnabled="false"/>

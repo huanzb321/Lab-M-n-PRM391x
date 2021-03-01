@@ -14,13 +14,14 @@ public class CustomAdapter extends BaseAdapter {
     private Context mContent;
     private int layout;
     List<Item> itemList;
+    private int mImage [];
     private LayoutInflater mInflater;
 
-    public CustomAdapter (Context applicationContext, int layout, List<Item> listItem) {
+    public CustomAdapter (Context applicationContext, int layout, List<Item> listItem, int [] image) {
         this.mContent = applicationContext;
         this.layout = layout;
         this.itemList = listItem;
-
+        this.mImage = image;
     }
 
     @Override
@@ -42,10 +43,10 @@ public class CustomAdapter extends BaseAdapter {
         mInflater = (LayoutInflater.from(mContent));
         view = mInflater.inflate(layout, null);
         TextView txt1 = view.findViewById(R.id.textView);
-
+        ImageView icon = view.findViewById(R.id.icon);
         Item item = itemList.get(position);
         txt1.setText(item.getName());
-
+        icon.setImageResource(mImage[position]);
         return view;
     }
 }

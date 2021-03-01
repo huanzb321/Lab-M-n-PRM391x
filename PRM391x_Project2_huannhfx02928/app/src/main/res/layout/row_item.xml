@@ -9,11 +9,13 @@
         android:id="@+id/icon"
         android:layout_width="@dimen/dp_100"
         android:layout_height="@dimen/dp_100"
-        android:src="@drawable/hotel" />
+        android:background="@color/white"
+        android:src="@drawable/atm_machine" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dp_15"/>
 </LinearLayout>
