@@ -15,8 +15,8 @@ public class FragmentAtm extends ListFragment {
         customAdapter = cus;
     }
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_atm_layout,container,false);
-        setListAdapter(customAdapter);
-        return view;
+        View view = inflater.inflate(R.layout.activity_atm_layout,container,false); // thực hiện khỏi tạo layout
+        setListAdapter(customAdapter); // Truyền đối số vào phương thức setListAdapter
+        return view; // trả về layout hiển thị trong fragment gọi nó
     }
 }

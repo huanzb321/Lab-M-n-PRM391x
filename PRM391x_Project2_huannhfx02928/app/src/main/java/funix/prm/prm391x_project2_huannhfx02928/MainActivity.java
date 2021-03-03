@@ -12,33 +12,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity  extends AppCompatActivity {
-    List<Item> hotelList = new ArrayList<>();
+    List<Item> hotelList = new ArrayList<>(); // mảng thuộc tính của Item
     List<Item> atmList = new ArrayList<>();
     List<Item> hospitalList = new ArrayList<>();
     List<Item> metroList = new ArrayList<>();
 
     private void addListHotel() { //
         for (int i = 0 ; i < hotel.length ; i++) {
-            hotelList.add(new Item(hotel[i])); // add danh sách hiển thị thông tin hotel trong listView
+            hotelList.add(new Item(hotel[i])); // add danh sách hiển thị thông tin hotel vào mảng hotelList
         }
     }
     private void addListATM() {
         for (int i = 0 ; i < atm.length ; i++) {
-            atmList.add(new Item(atm[i])); // add danh sách hiển thị thông tin atm trong listView
+            atmList.add(new Item(atm[i])); // add danh sách hiển thị thông tin atm vào mảng atmList
         }
     }
     private void addListHospital() {
         for (int i = 0 ; i < hospital.length ; i++) {
-            hospitalList.add(new Item(hospital[i])); // add danh sách hiển thị thông tin hospital trong listView
+            hospitalList.add(new Item(hospital[i])); // add danh sách hiển thị thông tin hospital vào mảng hospitalList
         }
     }
     private void addListMetro() {
         for (int i = 0 ; i < metro.length ; i++) {
-            metroList.add(new Item(metro[i])); // add danh sách hiển thị thông tin metro trong listView
+            metroList.add(new Item(metro[i])); // add danh sách hiển thị thông tin metro vào mảng metroList
         }
     }
 
-    private String hotel [] = {
+    private String hotel [] = { // Mảng thông tin hiển thị
             "OYO 472 Lenka \n124 Phố Thú Y, Đức Thượng, ward, Hà Nội, Việt Nam", //https://goo.gl/maps/JhBMjnrVLjAvYbFa8
             "Trường Linh \nngõ 33 Tu Hoàng, Xuân Phương, Nam Từ Liêm, Hà Nội, Việt Nam", // https://goo.gl/maps/myFtCFxbVKoTX339A
             "French-styled house \nAlley 41/199, No. 7 Đường Hồ Tùng Mậu, Hà Nội, Việt Nam", //https://goo.gl/maps/ihtgXSeckKeZGVNW9
@@ -79,23 +79,23 @@ public class MainActivity  extends AppCompatActivity {
             "Tuyến 49 \nTrần Khánh Dư - KĐT Mỹ Đình II", "Tuyến 89 \nBX Yên Nghĩa - Bx Sơn Tây",
             "Tuyến 74 \nXuân Khanh - BX Mỹ Đình"};
 
-    private int imageHotel [] = {
+    private int imageHotel [] = { // Mảng ảnh hotel
             R.drawable.hotel, R.drawable.hotel, R.drawable.hotel,
             R.drawable.hotel, R.drawable.hotel, R.drawable.hotel,
             R.drawable.hotel, R.drawable.hotel};
 
-    private int imageAtm [] = {
+    private int imageAtm [] = { // Mảng ảnh atm
             R.drawable.atm_machine, R.drawable.atm_machine, R.drawable.atm_machine,
             R.drawable.atm_machine, R.drawable.atm_machine, R.drawable.atm_machine,
             R.drawable.atm_machine, R.drawable.atm_machine, R.drawable.atm_machine};
 
-    private int imageHospital [] = {
+    private int imageHospital [] = { // Mảng ảnh hospital
             R.drawable.hospital, R.drawable.hospital, R.drawable.hospital,
             R.drawable.hospital, R.drawable.hospital, R.drawable.hospital,
             R.drawable.hospital, R.drawable.hospital, R.drawable.hospital,
             R.drawable.hospital, R.drawable.hospital};
 
-    private int imageMetro [] = {
+    private int imageMetro [] = { // Mảng ảnh metro
             R.drawable.metro, R.drawable.metro, R.drawable.metro,
             R.drawable.metro, R.drawable.metro, R.drawable.metro,
             R.drawable.metro, R.drawable.metro, R.drawable.metro};
@@ -103,7 +103,7 @@ public class MainActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Layout hình hiển thị đầu tiên
 
         FragmentMenu fragment = new FragmentMenu(); // Khởi tại đối gượng trong FragmentMenu
         FragmentManager fragmentManager = getSupportFragmentManager(); // Quản lý fragment

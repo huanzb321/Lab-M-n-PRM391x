@@ -10,15 +10,15 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class CustomAdapter extends BaseAdapter {
+public class CustomAdapter extends BaseAdapter { // Cấu hình lại Adapter
     private Context mContent;
-    private int layout;
-    List<Item> itemList;
-    private int mImage [];
+    private int layout; // Giao diện listView
+    List<Item> itemList; // Mảng text hiển thị trên listView
+    private int mImage []; // Mảng ảnh hiển thị trên listView
     private LayoutInflater mInflater;
 
     public CustomAdapter (Context applicationContext, int layout, List<Item> listItem, int [] image) {
-        this.mContent = applicationContext;
+        this.mContent = applicationContext; // gán giá trị thuộc tính từ tham số truyền vào
         this.layout = layout;
         this.itemList = listItem;
         this.mImage = image;
@@ -39,7 +39,7 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View view, ViewGroup viewGroup) {
+    public View getView(int position, View view, ViewGroup viewGroup) { // Hiển thị các giá trị vào layout
         mInflater = (LayoutInflater.from(mContent));
         view = mInflater.inflate(layout, null);
         TextView txt1 = view.findViewById(R.id.textView);
