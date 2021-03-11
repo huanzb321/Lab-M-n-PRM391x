@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "PRM391xLab_bai14_ContentProvider"
