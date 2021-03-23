@@ -4,20 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ClockActivity">
+    tools:context=".Clock"
+    android:orientation="vertical">
 
     <TimePicker
-        android:id="@+id/alarmTimePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnAdd_clock"
-        android:layout_width="wrap_content"
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/add"/>
+        android:timePickerMode="clock" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        style="?android:attr/buttonBarStyle" >
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/save"
+            android:textSize="@dimen/text_button"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:onClick="addAlarm" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_button"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
 
+    </LinearLayout>
 </LinearLayout>

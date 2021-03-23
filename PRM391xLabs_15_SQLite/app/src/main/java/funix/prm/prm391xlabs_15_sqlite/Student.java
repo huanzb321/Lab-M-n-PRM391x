@@ -5,12 +5,12 @@ public class Student  {
     private String name;
     private String address;
     private String phone_number;
-    public Student(int id, String cursorString, String string, String name) {
+    public Student(int id, String name, String address, String phonenumber) {
         super();
         this.id = id;
         this.name = name;
         this.address = address;
-        this.phone_number = phone_number;
+        this.phone_number = phonenumber;
     }
     public int getId() {
         return id;

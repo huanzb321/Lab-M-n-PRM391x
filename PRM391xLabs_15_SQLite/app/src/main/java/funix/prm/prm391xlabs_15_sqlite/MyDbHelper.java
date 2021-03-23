@@ -23,14 +23,14 @@ class MyDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String create_students_table = String.format(
-                "CREATE TABLE 4s(4s INTEGER PRIMARY KEY, 4s TEXT, 4s TEXT, 4s TEXT)",
+                "CREATE TABLE %s(%s INTEGER PRIMARY KEY, %s TEXT, %s TEXT, %s TEXT)",
                 TABLE_NAME, KEY_ID, KEY_NAME, KEY_ADDRESS, KEY_PHONE_NUMBER);
         db.execSQL(create_students_table);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String drop_students_table = String.format("DROP TABLE IF EXISTS 4s", TABLE_NAME);
+        String drop_students_table = String.format("DROP TABLE IF EXISTS %s", TABLE_NAME);
         db.execSQL(drop_students_table);
         onCreate(db);
     }
