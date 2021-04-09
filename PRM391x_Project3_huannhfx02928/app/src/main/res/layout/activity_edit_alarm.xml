@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditAlarmActivity"
+    tools:ignore="Autofill,LabelFor,ButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical" >
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:layout_height="0dp"/>
+
+    <EditText
+        android:id="@+id/edtx_ten_bao_thuc"
+        android:inputType="textNoSuggestions"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/space_small"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:text="@string/them"
+        android:onClick="onConfirmClick"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:text="@string/luu"
+        android:onClick="onConfirmClick"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

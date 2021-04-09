@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
 <resources>
-    <string name="app_name">Alarm Clock</string>
-    <string name="clock">clock</string>
-    <string name="page_title">Alarm Clock</string>
-    <string name="add">+</string>
-    <string name="cancel">Cancel</string>
-    <string name="save">Save</string>
-    <string name="alarm">Alarm Clock</string>
-    <string name="edit_alarm">Edit Alarm</string>
-    <string name="edit">Edit option</string>
-
+    <string name="app_name">Đồng hồ báo thức</string>
+    <string name="title_main">Đồng hồ báo thức</string>
+    <string name="msg_ring">ĐANG ĐỔ CHUÔNG…</string>
+    <string name="tg_on">Bật</string>
+    <string name="tg_off">Tắt</string>
+    <string name="title_add">Thêm báo thức</string>
+    <string name="new_alarm_name">Báo thức</string>
+    <string name="them">Thêm</string>
+    <string name="title_edit">Sửa báo thức</string>
+    <string name="luu">Lưu</string>
 </resources>

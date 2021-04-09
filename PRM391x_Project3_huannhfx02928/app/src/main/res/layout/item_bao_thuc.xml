@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RelativeOverlap,ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_medium"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ten_bao_thuc"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/orange"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:textOn="@string/tg_on"
+            android:textOff="@string/tg_off"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tv_thoi_gian"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:layout_margin="@dimen/space_medium"
+            android:layout_toEndOf="@id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_toRightOf="@id/toggle"/>
+        <ImageView
+            android:id="@+id/delete"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/edit"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_toLeftOf="@id/delete"/>
+    </RelativeLayout>
+
+</LinearLayout>

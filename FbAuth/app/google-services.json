@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675240643691",
+    "project_id": "fir-auth-8dc25",
+    "storage_bucket": "fir-auth-8dc25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675240643691:android:fc274d2e9c37255f9df52e",
+        "android_client_info": {
+          "package_name": "funix.prm.fbauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675240643691-87h5vfpu0eof0q4siesht9gsuao1rm6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN-H1olQAmo1JtQjfrzEReSVFincqrFZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675240643691-87h5vfpu0eof0q4siesht9gsuao1rm6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

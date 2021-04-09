@@ -6,13 +6,14 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -25,45 +26,47 @@ public class MainActivity extends AppCompatActivity {
     static final String KEY_NUM = "num";
     static final String KEY_ID = "id";
 
-    final ArrayList<Alarm> alarmsList;
-    final HashSet<Alarm> isRinging;
+    // List chứa các đối tượng BaoThuc được nạp từ database
+    final ArrayList<BaoThuc> baoThucList;
+    // Set chứa các đối tượng BaoThuc đang đổ chuông
+    final HashSet<BaoThuc> dangDoChuong;
 
     TextView tvRing;
-    ListView listAlarm;
-    ClockAdapter adapter;
-    LiteDatabase dbHelper;
+    ListView lv;
+    BaoThucAdapter adapter;
+    BaoThucDatabase baoThucDatabase;
     Context appContext;
     AlarmManager alarmManager;
 
-    public MainActivity() {
+    public MainActivity() { // Constructor
         super(R.layout.activity_main);
-        alarmsList = new ArrayList<>();
-        isRinging = new HashSet<>();
+        baoThucList = new ArrayList<>();
+        dangDoChuong = new HashSet<>();
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Layout hiển thị đầu tiên
 
-        listAlarm = findViewById(R.id.listAlarm);
-        adapter = new ClockAdapter(this, R.layout.row_alarm, alarmsList);
-        listAlarm.setAdapter(adapter);
+        tvRing = findViewById(R.id.tv_ring);
+        lv = findViewById(R.id.listview);
+        adapter = new BaoThucAdapter(this, R.layout.item_bao_thuc, baoThucList); // khởi tạo đối tượng
+        lv.setAdapter(adapter);
 
-        dbHelper = new LiteDatabase(this);
-        dbHelper.open();
+        baoThucDatabase = new BaoThucDatabase(this);
+        baoThucDatabase.open();
         appContext = getApplicationContext();
         alarmManager = (AlarmManager) appContext.getSystemService(ALARM_SERVICE);
 
-        isRinging(getIntent());
+        doChuong(getIntent());
         loadOrRefreshAll();
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        isRinging(intent);
+        doChuong(intent);
     }
 
     /**
@@ -72,13 +75,13 @@ public class MainActivity extends AppCompatActivity {
      *  từ ID xác định BaoThuc đang đổ chuông và đưa vào Set
      * Khi Set nhận phần tử thứ nhất, bật Service phát nhạc chuông
      */
-    private void isRinging(Intent intent) {
+    private void doChuong(Intent intent) {
         int id = intent.getIntExtra(KEY_ID, -1);
         if (id != -1) {
-            Alarm alarm =  dbHelper.get(id);
-            isRinging.add(alarm);
-            if (isRinging.size() == 1) {
-                startService(new Intent(this, RingSound.class));
+            BaoThuc baoThuc =  baoThucDatabase.get(id);
+            dangDoChuong.add(baoThuc);
+            if (dangDoChuong.size() == 1) {
+                startService(new Intent(this, MyRingService.class));
                 tvRing.setVisibility(View.VISIBLE);
             }
         }
@@ -88,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
      * Được gọi khi MainActivity khởi động hoặc mỗi khi database có sự thay đổi
      * Cập nhật List, ListView (thông qua adapter), trạng thái Receiver và đăng ký AlarmManager
      */
-    public void loadOrRefreshAll() {
-        dbHelper.loadOrRefresh(alarmsList);
+    private void loadOrRefreshAll() {
+        baoThucDatabase.loadOrRefresh(baoThucList);
         adapter.notifyDataSetChanged();
         checkReceiver();
         setAlarms();
@@ -100,13 +103,13 @@ public class MainActivity extends AppCompatActivity {
      *  đảm bảo không nhận BOOT_COMPLETED khi không có báo thức nào được bật
      */
     private void checkReceiver() {
-        ComponentName myReceiver = new ComponentName(appContext, BroadCast.class);
+        ComponentName myReceiver = new ComponentName(appContext, MyAlarmReceiver.class);
         PackageManager packageManager = appContext.getPackageManager();
         int oldState = packageManager.getComponentEnabledSetting(myReceiver),
                 newState = oldState,
                 enabled = PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 disabled = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
-        if (dbHelper.anyEnabled()) {
+        if (baoThucDatabase.anyEnabled()) {
             if (oldState != enabled) {
                 newState = enabled;
             }
@@ -127,21 +130,21 @@ public class MainActivity extends AppCompatActivity {
      *  phân biệt bằng cách dùng ID của BaoThuc đặt cho Action của Intent
      */
     private void setAlarms() {
-        Intent intent = new Intent(appContext, BroadCast.class);
+        Intent intent = new Intent(appContext, MyAlarmReceiver.class);
         PendingIntent pendingIntent;
         Calendar calendar = Calendar.getInstance();
         int currentMinuteOfDay = calendar.get(Calendar.HOUR_OF_DAY) * 60
                 + calendar.get(Calendar.MINUTE);
 
-        for (Alarm alarm: alarmsList) {
-            intent.setAction("" + alarm.getId());
-            intent.putExtra(KEY_ID, alarm.getId());
+        for (BaoThuc baoThuc: baoThucList) {
+            intent.setAction("" + baoThuc.getId());
+            intent.putExtra(KEY_ID, baoThuc.getId());
             pendingIntent = PendingIntent.getBroadcast(appContext, 0, intent, 0);
-            if (alarm.isEnabled()) {
-                calendar.set(Calendar.HOUR_OF_DAY, alarm.getHours());
-                calendar.set(Calendar.MINUTE, alarm.getMinutes());
+            if (baoThuc.isEnabled()) {
+                calendar.set(Calendar.HOUR_OF_DAY, baoThuc.getHour());
+                calendar.set(Calendar.MINUTE, baoThuc.getMinute());
                 calendar.set(Calendar.SECOND, 0);
-                if (alarm.getHours() * 60 + alarm.getMinutes()
+                if (baoThuc.getHour() * 60 + baoThuc.getMinute()
                         <= currentMinuteOfDay) {
                     calendar.add(Calendar.DATE, 1);
                 }
@@ -155,7 +158,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onAddClick(View v) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) { // Hiển thị tên trang và Icon add
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    public void onAddClick(MenuItem item) { // phương thức chạy khi nhấn vào Icon add
         onAddOrEditClick(-1);
     }
 
@@ -167,14 +176,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onAddOrEditClick(int position) {
         boolean adding = (position == -1);
-        Intent intent = new Intent(this, Clock.class);
+        Intent intent = new Intent(this, EditAlarmActivity.class);
         intent.putExtra(KEY_ADDING, adding);
         if (adding) {
-            intent.putExtra(KEY_NUM, (alarmsList.size() + 1));
+            intent.putExtra(KEY_NUM, (baoThucList.size() + 1));
         } else {
-            intent.putExtra(KEY_ID, position );
+            intent.putExtra(KEY_ID, baoThucList.get(position).getId());
         }
-        startService(new Intent(this, RingSound.class));
         startActivityForResult(intent, CODE_REQUEST_EDIT);
     }
 
@@ -193,21 +201,26 @@ public class MainActivity extends AppCompatActivity {
      * @param position là vị trí của báo thức
      */
     public void onDeleteClick(int position) {
-
-        Alarm alarm = alarmsList.get(position-1);
-        //System.out.println(alarm.getHours());
-        dbHelper.delete(alarm);
+        BaoThuc baoThuc = baoThucList.get(position);
+        tatChuong(baoThuc);
+        Intent intent = new Intent(appContext, MyAlarmReceiver.class);
+        intent.setAction("" + baoThuc.getId());
+        PendingIntent pendingIntent =
+                PendingIntent.getBroadcast(appContext, 0, intent, 0);
+        alarmManager.cancel(pendingIntent);
+        baoThucDatabase.delete(baoThuc);
         loadOrRefreshAll();
     }
 
     /**
-     * Called when delete or turn of alarm
-     * @param alarm Alarm object
+     * Được gọi khi xóa hoặc tắt một BaoThuc
+     * Thử loại bỏ BaoThuc khỏi HashSet dangdoChuong
+     * Nếu là BaoThuc cuối cùng còn lại trong Set thì tắt Service nhạc chuông
      */
-    private void offSound(Alarm alarm) {
-        if (isRinging.remove(alarm)
-                && isRinging.isEmpty()) {
-            stopService(new Intent(this, RingSound.class));
+    private void tatChuong(BaoThuc baoThuc) {
+        if (dangDoChuong.remove(baoThuc)
+                && dangDoChuong.isEmpty()) {
+            stopService(new Intent(this, MyRingService.class));
             tvRing.setVisibility(View.GONE);
         }
     }
@@ -215,21 +228,21 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Được gọi khi bật / tắt một báo thức
      * Cập nhật trạng thái mới của báo thức trong database
-     * @param position locate of alarm
-     * @param isChecked new state
+     * @param position vị trí của báo thức
+     * @param isChecked trạng thái mới
      */
     public void onToggleItem(int position, boolean isChecked) {
-        Alarm alarm = alarmsList.get(position);
-        if (!isChecked) offSound(alarm);
-        alarm.setEnabled(isChecked);
-        dbHelper.update(alarm);
+        BaoThuc baoThuc = baoThucList.get(position);
+        if (!isChecked) tatChuong(baoThuc);
+        baoThuc.setEnabled(isChecked);
+        baoThucDatabase.update(baoThuc);
         loadOrRefreshAll();
     }
 
     @Override
     protected void onDestroy() {
-        dbHelper.close();
-        stopService(new Intent(this, RingSound.class));
+        baoThucDatabase.close();
+        stopService(new Intent(this, MyRingService.class));
         super.onDestroy();
     }
 }
